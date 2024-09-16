@@ -13,13 +13,13 @@ function calculator(num1, num2, operation) {
                 resolve(num1 - num2);
                 break;
             case '*':
-                resolve(num1 * num2);
+                resolve(num1 * num2); //use node calculator 100 20 "*" to get ans
                 break;
             case '/':
                 if (num2 === 0) {
                     reject('Error: Division by zero is not allowed.');
                 } else {
-                    resolve(num1 / num2);
+                    resolve(num1 / num2); //use node calculator 100 20 "//" to get ans
                 }
                 break;
             default:
@@ -29,12 +29,12 @@ function calculator(num1, num2, operation) {
 }
 
 
-const args = process.argv.slice(2); // Skip the first two arguments
+const args = process.argv.slice(2); 
 const num1 = parseFloat(args[0]);
 const num2 = parseFloat(args[1]);
 const operation = args[2]; 
 
-// Log the inputs to verify correctness
+
 console.log(`Inputs: Number 1 = ${num1}, Number 2 = ${num2}, Operation = ${operation}`);
 
 calculator(num1, num2, operation)
