@@ -28,11 +28,11 @@ function calculator(num1, num2, operation) {
     });
 }
 
-// Get user input from command line arguments
+
 const args = process.argv.slice(2); // Skip the first two arguments
 const num1 = parseFloat(args[0]);
 const num2 = parseFloat(args[1]);
-const operation = args[2]; // Keep operation simple, no trimming
+const operation = args[2]; 
 
 // Log the inputs to verify correctness
 console.log(`Inputs: Number 1 = ${num1}, Number 2 = ${num2}, Operation = ${operation}`);
