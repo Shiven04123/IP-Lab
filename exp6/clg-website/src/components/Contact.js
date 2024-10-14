@@ -10,7 +10,7 @@ function Contact() {
       </p>
       <div style={contactDetails}>
         <p style={contactText}>
-          <strong>Email:</strong> info@mit.edu
+          <strong>Email:</strong> contact@mitmanipur.ac.in
         </p>
         <p style={contactText}>
           <strong>Phone:</strong> 2271925661
